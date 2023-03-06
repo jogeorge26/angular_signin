@@ -1,0 +1,19 @@
+<div class="form">
+  <h2>Login</h2>
+  <div class="input">
+      <div class="inputBox">
+          <label for="">Username</label>
+          <input [(ngModel)]="email" name="email" type="text">
+      </div>
+      <div class="inputBox">
+          <label for="">Password</label>
+          <input [(ngModel)]="pass" name="pass" type="password">
+      </div>
+      <div class="inputBox">
+          <input (click)="getValues" type="submit" name="" value="Sign In">
+      </div>
+  </div>
+  <p class="forgot">Forgot Password? <a href="#">Click Here</a></p>
+
+</div>
+<button (click)="getValues()"></button>
